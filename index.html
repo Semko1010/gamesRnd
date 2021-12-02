@@ -11,35 +11,43 @@
 
 <body>
     <form onSubmit="return false">
-        <div id="container">
-            <div id="chose">
-                <label for="">3</label>
-                <input type="radio" id="input1" name="input" value="3">
-                <label for="">5</label>
-                <input type="radio" id="input2" name="input" value="5">
-                <label for="">6</label>
-                <input type="radio" id="input3" name="input" value="7">
-                <label for="">custom</label>
-                <input type="radio" id="input4" name="input" value="10">
-                <div id="secretInput">
-                    <input id="secretInputField" type="text">
+        <div id="mainContainer">
+            <div id="container">
+                <div id="chose">
+                    <div id="chose1">
+                        <label for="">3</label>
+                        <input type="radio" id="input1" name="input" value="3">
+                        <label for="">5</label>
+                        <input type="radio" id="input2" name="input" value="5">
+                        <label for="">6</label>
+                        <input type="radio" id="input3" name="input" value="7">
+                        <label for="">custom</label>
+                        <input type="radio" id="input4" name="input" value="10">
+                        <div id="secretInput">
+                            <input id="secretInputField" type="text">
+                        </div>
+                    </div>
+                    <div id="trys">
+                        <p>wie viele Versuche brauchst du ?</p>
+                        <p id="versuche">0</p>
+                    </div>
                 </div>
-                <div id="trys">
-                    <p>wie viele Versuche brauchst du ?</p>
-                    <p> <span id="span"></span>/0</p>
+                <div id="chose2">
+                    <input required type="text" id="input">
+                    <button id="btn" onclick="send()">Send</button>
+
+
+
                 </div>
-            </div>
-            <div id="chose1">
-                <input required type="text" id="input">
-                <button id="btn" onclick="send()">Send</button>
+
+
             </div>
 
-            <div>
-                <p id="output">0</p>
-            </div>
-
-        </div>
     </form>
+    <div id="output1">
+        <p id="output"></p>
+    </div>
+    </div>
     <script src="assets/js/main.js"></script>
 </body>
 

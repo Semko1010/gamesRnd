@@ -1,3 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 #secretInputField {
     display: none;
+    position: absolute;
+    left: 60px;
+    top: 50px;
+}
+
+#container {
+    width: 250px;
+}
+
+#mainContainer {
+    display: flex;
+}
+
+form {
+    border: 1px solid Black;
+    border-radius: 10px;
+    width: 300px;
+    height: 350px;
+    position: relative;
+    background: linear-gradient(white, black);
+    font-family: 'Work Sans', sans-serif;
+}
+
+#trys {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#chose1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="radio"] {
+    margin-left: 10px;
+    background-color: yellowgreen;
+    box-shadow: 0 0 20px black;
+}
+
+#chose2 {
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 200px;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    left: 15px;
+}
+
+#output1 {
+    width: 50px;
+    height: 350px;
+    border-left: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: yellowgreen;
 }
