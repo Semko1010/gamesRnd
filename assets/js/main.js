@@ -9,6 +9,8 @@ let btn = document.querySelector("#btn")
 let tryy = document.querySelector("#trys")
 let versuche = document.querySelector("#versuche")
 let chose1 = document.querySelector("#chose1")
+let container = document.querySelector("#container")
+
 let rnd = Math.floor(Math.random() * 100);
 let trys;
 let endGame = 0;
@@ -38,20 +40,21 @@ function send() {
     }
     if (rnd == input.value) {
         output.innerHTML = "You Win"
+        btn.textContent = "New Game"
+        btn.disabled = true;
     }
     if (rnd < input.value) {
-        output.innerHTML += "A"
+        output.innerHTML += "↓"
     }
     if (rnd > input.value) {
-        output.innerHTML += "V"
+        output.innerHTML += "↑"
     }
     if (endGame == trys) {
         output.innerHTML = "Game Over"
         btn.disabled = true;
     }
 
-    console.log(endGame);
-    console.log(trys);
+
     console.log(rnd);
     output.innerHTML += input.value + "<br>";
     tryy.style.display = "block";
